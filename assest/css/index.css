@@ -972,7 +972,7 @@ body {
 /*-----------------------------proposition---------------------------*/
 .section8 {
   height: 600px;
-  background-image: url(/assest/image/section8.png);
+  background-image: url(../image/section8.png);
   background-color: #201A35;
   margin-top: 20px;
   display: flex; /* Enable flexbox */
