@@ -10,12 +10,21 @@
         position: relative;
         width: 100%;
         z-index: 999999999999;
+        height: 100Px;
+    }
+    .fixed-top {
+        position: absolute;
+        top: 95px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
     .container-fluid{
         overflow: hidden;
     }
     .header.default {
         background-color: #201A35;
+        height: 100px;
     }
     .header .menu {
         margin: 0px;
@@ -59,6 +68,8 @@
     .aventage {
         background-color: #201A35;
         height: 2500PX;
+        margin-top: 370px;
+        
     }
 
 
