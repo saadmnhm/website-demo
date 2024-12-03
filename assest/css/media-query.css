@@ -1,0 +1,401 @@
+
+
+/* Default styles: Base styles for large screens or no constraints */
+
+/* Extra Small Devices (Portrait Phones, <576px) */
+@media (max-width: 575.98px) {
+    /* Styles for phones */
+    .header {
+        background-color: #201A35;
+        position: relative;
+        width: 100%;
+        z-index: 999999999999;
+    }
+    .container-fluid{
+        overflow: hidden;
+    }
+    .header.default {
+        background-color: #201A35;
+    }
+    .header .menu {
+        margin: 0px;
+    }
+    .header .logo {
+        position: relative;
+        left: 20Px;
+        top: 20Px;
+
+    }
+    .header .menu-icon {
+        left: 150Px;
+        top: 25px;
+    }
+    .header ul {
+        height: auto; 
+        right: auto; 
+        border-radius: 1PX;
+    }
+    .middle-header img {
+        width: 300px;
+    }
+    .page-head{
+        display: none;
+    }
+    .aventage .why .logo .image-class1 {
+        width: 225px;
+        height: 90Px;
+        position: relative;
+        top: 40px;
+        left: -10px;
+    }
+    .aventage .why .logo .image-class2 {
+        position: relative;
+        left: 115px;
+        width: 120px;
+        left: 10px;
+        top: 20Px;
+    }
+    .aventage {
+        background-color: #201A35;
+        height: 2500PX;
+    }
+
+
+    .presentation .qui2 {
+        width: 185px;
+        height: 160px;
+        position: relative;
+        top: 80px;
+    }
+    .presentation .part2{
+        position: relative;
+    right: 100Px;
+    }
+    .presentation-2 .buttom p {
+        font-size: 15px;
+    }
+    .presentation-2 .buttom a {
+        display: inline-block;
+        width: 104px;
+        height: 75px;
+    }
+    .presentation-2 .body {
+        width: 300PX;
+        right: 132px;
+        top: 8px;
+    }
+    .presentation-2 .body p {
+        font-family: Poppins;
+        width: 300Px;
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .presentation-2 {
+        height: 375px;
+    }
+    .vd-youtube{
+        display: block;
+        height: 375Px;  
+    }
+    .vd-youtube .text {
+        display: none;
+    }
+    .vd-youtube .mobile-text{
+        display: block !important;
+        margin: 70px 0 0 80px;
+    }
+    .vd-youtube p {
+        font-size: 25px;
+        width: 290px;
+    }
+    .vd-youtube span {
+        font-family: Poppins;
+        font-size: 25px;
+    }
+    .image-pop-up {
+        width: 300px;
+        position: relative;
+        top: 55px;
+        left: 65px;
+    }
+    .service .image .img1 {
+        width: 140px;
+        position: relative;
+        left: 10px;
+        height: 160Px;
+    }
+    .service .image .img2 {
+        width: 260Px;
+        height: 90px;
+        position: relative;
+        left: 13px;
+        top: 30px;
+    }.service .image .part2 {
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+    .service .image .img3 {
+        width: 340px;
+        height: 80Px;
+        position: relative;
+        top: 100px;
+        left: -315Px;
+    }
+    .service {
+        height: 1970px;
+        background-color: #FFCB21;
+    }
+    .proposition .under-title p {
+        font-size: 26px;
+        line-height: 55px;
+        padding: 0px 0px 0 0px;
+    }
+    .proposition .text p {
+        font-size: 20px;
+        line-height: 29.86px;
+        padding: 0Px 10Px 0 10px;
+    }
+    .proposition .box img{
+        width: 90px !important;
+        top: 10px !important;
+    }
+    .rpi-overlay .box {
+        width: 90px !important;
+        height: 90px !important;
+        margin-bottom: 0px !important;
+        box-sizing: border-box !important;
+    }
+    .rpi-slide {
+        min-width: 100%;
+        height: 800px !important;
+    }
+    .section8 .text span, 
+    .section8 .text p {
+        font-family: Poppins;
+        font-size: 40px;
+    }
+    .section8 {
+        height: 400px;
+    }
+    .footer {
+        .title p {
+            font-size: 25px;
+        }
+        .man-footer{
+            display: none;
+        }
+        .frame .part1 {
+            display: flex;
+            margin-top: 90Px;
+            width: 380px;
+        }
+        .screen-wts {
+            position: relative;
+            right: 215PX;
+            z-index: 1;
+            width: 425px;
+            bottom: 70px;
+            height: 632Px;
+        }
+        .frame {
+            display: flex;
+            height: 1000Px;
+        }
+        .man-think {
+            height: 100Px;
+            position: relative;
+            top: 60px;
+            right: -22px;
+            width: 200px;
+            z-index: 3;
+        }
+        .doz-privé {
+            position: relative;
+            top: 180Px;
+            right: 425PX;
+            width: 170px;
+            height: 75px;
+            z-index: 3;
+        }
+        .email-footer {
+            position: relative;
+            top: 250Px;
+            right: 655PX;
+            width: 210px;
+            height: 75px;
+            z-index: 3;
+        }
+        .email-footer img{
+            width: 230px !important;
+            height: 70px;
+        }
+        .phone-footer {
+            position: relative;
+            top: 320Px;
+            right: 900PX;
+            width: 210px;
+            height: 75px;
+            z-index: 3;
+        }
+        .phone-footer img{
+            width: 270px;
+        }
+        .reseau {
+            position: relative;
+            top: 450Px;
+            right: 1115PX;
+            width: 390px;
+            height: 68px;
+            z-index: 3;
+        }
+        .reseau-mess{
+            width: 280px;
+        }
+        .logo {
+            display: flex;
+            position: relative;
+            bottom: 56px;
+            left: 50px;
+        }
+    }
+    .presentation .part1 {
+        position: relative;
+        left: 10px;
+    }
+    .presentation {
+        height: 605px;
+    }
+    .presentation .part2 {
+        position: relative;
+        right: 295Px;
+        width: 10px;
+    }
+    .presentation .qui3 {
+        top: 120Px;
+        left: -110px;
+    }
+    .presentation .qui2 {
+        width: 410px;
+        height: 160px;
+        position: relative;
+        top: 145px;
+    }
+    .presentation .qui4 {
+        width: 260px;
+        height: 260px;
+        position: relative;
+        top: 270px;
+        right: 45px;
+    }
+    .aventage-flex-box {
+        margin: 20px 10px 0px 30px;
+    }
+    
+    
+
+  }
+  
+  /* Small Devices (Landscape Phones/Tablets, 576px to 767px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Styles for landscape phones or small tablets */
+    .header .logo {
+        position: relative;
+        left: 20Px;
+        top: 20Px;
+
+    }
+    .header .menu-icon {
+        left: 150Px;
+        top: 25px;
+    }
+    .header ul {
+        height: auto; 
+        right: auto; 
+        border-radius: 1PX;
+    }
+    .middle-header img {
+        width: 300px;
+    }
+    .page-head{
+        display: none;
+    }
+    .aventage .why .logo .image-class1 {
+        width: 225px;
+        height: 90Px;
+        position: relative;
+        top: 40px;
+        left: -10px;
+    }
+    .aventage .why .logo .image-class2 {
+        position: relative;
+        left: 115px;
+        width: 120px;
+        left: 10px;
+        top: 20Px;
+    }
+    .aventage {
+        background-color: #201A35;
+        height: 2500PX;
+    }
+  }
+  
+  /* Medium Devices (Tablets, 768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Styles for tablets */
+    .header .logo {
+        position: relative;
+        left: 20Px;
+        top: 20Px;
+
+    }
+    .header .menu-icon {
+        left: 150Px;
+        top: 25px;
+    }
+    .header ul {
+        height: auto; 
+        right: auto; 
+        border-radius: 1PX;
+    }
+    .middle-header img {
+        width: 300px;
+    }
+    .page-head{
+        display: none;
+    }
+    .aventage .why .logo .image-class1 {
+        width: 225px;
+        height: 90Px;
+        position: relative;
+        top: 40px;
+        left: -10px;
+    }
+    .aventage .why .logo .image-class2 {
+        position: relative;
+        left: 115px;
+        width: 120px;
+        left: 10px;
+        top: 20Px;
+    }
+    .aventage {
+        background-color: #201A35;
+        height: 2500PX;
+    }
+
+  }
+  
+  /* Large Devices (Laptops, 992px to 1199px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Styles for small desktops or laptops */
+  }
+  
+  /* Extra Large Devices (Desktops, ≥1200px) */
+  @media (min-width: 1200px) {
+    /* Styles for larger screens */
+  }
+  
+  /* Ultra Large Devices (4K screens, ≥1920px) */
+  @media (min-width: 1920px) {
+    /* Styles for ultra-wide screens */
+  }
+  
