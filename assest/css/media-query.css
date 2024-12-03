@@ -13,8 +13,8 @@
         height: 100Px;
     }
     .fixed-top {
-        position: absolute;
-        top: 95px;
+        position: absolute !important;
+        top: 95px !important;
         right: 0;
         left: 0;
         z-index: 1030;
