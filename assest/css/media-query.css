@@ -47,6 +47,7 @@
         position: relative;
         top: 40px;
         left: -10px;
+        object-fit: contain;
     }
     .aventage .why .logo .image-class2 {
         position: relative;
@@ -263,7 +264,7 @@
         left: 10px;
     }
     .presentation {
-        height: 605px;
+        height: 525px;
     }
     .presentation .part2 {
         position: relative;
@@ -271,21 +272,25 @@
         width: 10px;
     }
     .presentation .qui3 {
-        top: 120Px;
-        left: -110px;
+        top: 112Px;
+        left: -120px;
+        width: 135px;
+        height: 55px;
+        object-fit: contain;
+        position: relative;
     }
     .presentation .qui2 {
         width: 410px;
         height: 160px;
         position: relative;
-        top: 145px;
+        top: 110px;
         object-fit: contain;
     }
     .presentation .qui4 {
         width: 260px;
         height: 260px;
         position: relative;
-        top: 270px;
+        top: 210px;
         right: 45px;
     }
     .aventage-flex-box {
@@ -293,7 +298,16 @@
     }
     .service-flex-box {
         margin: 10px 10px 0 30px;
+        width: 380px !important;
     }
+    .presentation .qui1 {
+        width: 160px;
+        height: 55px;
+        position: relative;
+        top: 40px;
+        object-fit: contain;
+    }
+    
     
     
 
