@@ -219,7 +219,7 @@ body {
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-        padding: 28px 0px;
+    padding: 28px 0px;
     position: relative;
     user-select: none;
   }
@@ -959,6 +959,175 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #393671;
+  
+}
+
+
+
+.slider-container {
+  position: relative;
+  height: 665px;
+  overflow: hidden;
+}
+
+
+.nested-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+  object-fit: contain; /* Ensures images fit well within the box */
+}
+
+
+
+.slider {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
+  opacity: 1;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.content { 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background: transparent;
+  border-radius: 25px;
+  position: relative;
+}
+
+.nested-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.nested-box {
+  background: transparent;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-buttons {
+  display: flex
+  ;
+      justify-content: center;
+      gap: 10px;
+      margin-top: -50px;
+}
+.nav-right{
+  position: relative;
+  left: 600px;
+  bottom: 400px;
+}
+.nav-left{
+  position: relative;
+  right: 600px;
+  bottom: 400px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Styling for the menu and items */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Added for wrapping items when they exceed space */
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.menu-item {
+  margin: 0px 0px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+  flex-basis: 5%;
+}
+
+.menu-item:hover {
+  color: #87cefa;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-item:hover .icon {
+  background: rgb(255 255 255 / 68%);
+  color: rgb(60 68 119);
+}
+
+.menu-item.active .icon {
+  background:#FFCB21;
   
 }
 
