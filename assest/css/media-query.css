@@ -181,6 +181,21 @@
     .section8 {
         height: 400px;
     }
+
+
+    .slider-container {
+        position: relative;
+        height: 365px;
+        overflow: hidden;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border-radius: 25px;
+        padding: 0px;
+      }
     .footer {
         .title p {
             font-size: 25px;
