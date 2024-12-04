@@ -48,7 +48,7 @@
         <!---------------------start---aventage-card--------------------------------->
         <div class="aventage" id="aventage">
             <div class="title">
-                <p>NOS AVENTAGES</p>
+                <p>NOS AVANTAGES</p>
             </div>
             <div class="why">
                 <div class="logo" style="display: flex;  justify-content: center;">
@@ -104,7 +104,7 @@
                         </div>
                         <div class="text" style="text-align: center;padding: 0 22px 0 18px;">
                             <div class="first-part" style="text-align: center;">
-                                <p>خبــــــــــــــــــــــرة</p>
+                                <p>خبــــــــــــــــــــــــرة</p>
                                 <span class="span3" style="color: #FFDB86;">
                                     طويـــــــــــــــــــــــلة
                                 </span>
@@ -148,14 +148,14 @@
         <!--------------------start---QUI-SOMME-NOUS-------------------------------->
 
         <div class="presentation">
-            <div class="part1">
-                <img src="assest/image/qui1.png" alt="" class="qui1">
-                <img src="assest/image/qui2.png" alt="" class="qui2">
-            </div>
-            <div class="part2">
-                <img src="assest/image/qui3.png" alt="" class="qui3">
-                <img src="assest/image/keyboard hands 1.png" alt="" class="qui4">
-            </div>
+           <div class="part1">
+            <img src="assest/image/qui1.png" alt="" class="qui1">
+            <img src="assest/image/qui2.png" alt="" class="qui2">
+           </div>
+           <div class="part2">
+            <img src="assest/image/qui3.png" alt="" class="qui3">
+            <img src="assest/image/keyboard hands 1.png" alt="" class="qui4">
+           </div>
         </div>
         <!---------------------end---QUI-SOMME-NOUS-------------------------------->
 
@@ -181,18 +181,42 @@
 
 
         <!---------------------start---youtube-pop-up-------------------------------->
+       
         <div class="vd-youtube" id="vd-youtube">
-            <div class="text" >
-                <p>EVERY <br><span>SHOT</span><br>MATTERS</p>
+            <div class="text">
+              <p>EVERY <br><span>SHOT</span><br>MATTERS</p>
             </div>
-                    <a  id="showPopup"><img src="assest/image/vd-pop-up.png" alt="" class="image-pop-up"></a>
-            <div class="popup" style="display:none;height: 100%; width:100%;">
-                <iframe id="player" class="test3" src="https://youtu.be/NQMKLNchfZc?si=r67anGR2cYyzgpAM" frameborder="0" allowfullscreen></iframe>
+            <a id="showPopup"><img src="assest/image/vd-pop-up.png" alt="" class="image-pop-up"></a>
+            <div class="popup" style="display:none; height: 100%; width: 100%;">
+              <iframe id="player" class="test3" src="//www.youtube.com/embed/Q_WHGV5bejk" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="mobile-text" style="display: none;">
                 <p>EVERY <span>SHOT</span> MATTERS</p>
             </div>
-        </div>
+          </div>
+          
+          <script>
+            window.addEventListener("resize", function () {
+              const vdYoutube = document.getElementById("vd-youtube");
+          
+              if (window.innerWidth <= 991) {
+                vdYoutube.style.position = "absolute";
+                vdYoutube.style.top = "100px";
+                vdYoutube.style.left = "0";
+                vdYoutube.style.width = "100%";
+                vdYoutube.style.zIndex = "999";
+              } else {
+                vdYoutube.style.position = "relative"; // Reset for larger screens
+                vdYoutube.style.top = "unset";
+                vdYoutube.style.left = "unset";
+                vdYoutube.style.width = "unset";
+                vdYoutube.style.zIndex = "unset";
+              }
+            });
+          
+            // Trigger resize once to handle initial load
+            window.dispatchEvent(new Event("resize"));
+          </script>
 
         <!----------------------end--youtube-pop-up-------------------------------->
 
@@ -284,11 +308,10 @@
         <!---------------------start--- valeur------------------------------------->
         <div class="proposition">
             <div class="title">
-                <p>Notre proposition de valeur</p>
+                <p>NOTRE PROPOSITION DE VALEUR</p>
             </div>
             <div class="under-title">
-                <p>Votre école, notre expertise
-                    pour sa réussite 🤝</p>
+                <p>VOTRE ÉCOLE, NOTRE EXPERTISE POUR SA RÉUSSITE 🤝</p>
             </div>
             <div class="text">
                 <p> Notre équipe, forte de plus de <span> 10 ans d'expertise dans le secteur de l'éducation,</span> accompagne les établissements scolaires dans leur réussite. Nous vous soutenons dans le développement de votre image de marque, la gestion de votre présence sur les réseaux sociaux, la génération des leads et dans l'optimisation de vos processus commerciaux et marketing</p>
@@ -383,8 +406,7 @@
                 </div>
             </div>
         </div>
-
-    </div>
+        
 
 
 
