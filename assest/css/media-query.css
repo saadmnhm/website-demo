@@ -182,7 +182,9 @@
         height: 400px;
     }
 
-
+    .menu-item {
+        flex-basis: 5%;
+    }
     .slider-container {
         position: relative;
         height: 365px;
