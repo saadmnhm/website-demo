@@ -137,9 +137,6 @@
         margin-left: 0px;
         margin-top: 80px;
     }
-    .service     .part1 {
-            margin-left: -9px !important;
-        }
     .service .image .img3 {
         width: 340px;
         height: 80Px;
@@ -217,6 +214,10 @@
             margin-left: -42px;
             z-index: 3;
         }
+        .part1 {
+            margin-left: -9px !important;
+        }
+    
         .doz-privé {
             position: relative;
             top: 115Px;
@@ -276,8 +277,11 @@
             width: 380px !important;
         }
 
-        .part1 {
-            margin-left: 40px !important;
+        .presentation .part1 {
+            margin-left: 40px!important;
+        }
+        .service     .part1 {
+            margin-left: -9px !important;
         }
         .qui1 {
             margin-top: 30px;
@@ -285,30 +289,31 @@
             object-fit: contain;
         }
         .part1 .qui2 {
-            top: 80px !important;
-            height: 105px;
-            width: 310Px;
-            object-fit: contain;
+            top: 86px !important;
+            height: 95px;
+            width: 355Px;
+            /* object-fit: contain; */
+            right: 28Px;
         }
         .qui3 {
             position: relative !important;
-            top: 105Px !important;
-            right: 312px !important;
+            top: 100Px !important;
+            right: 350px !important;
             width: 120px !important;
         }
 
         .qui4 {
             position: relative !important;
-            TOP: 159Px !important;
-            width: 190px !important;
-            right: 250px !important;
+            TOP: 177Px !important;
+            width: 172px !important;
+            right: 300px !important;
 
         }
         .rpi-overlay {
 
             left: -12px !important;
         }
-    .aventage .aventage-flex-box .second-part {
+        .aventage .aventage-flex-box .second-part {
             padding: 10Px 40px 0 45px;
         }
     }
@@ -407,6 +412,7 @@
         background-color: #201A35;
         height: 2500PX;
     }
+    
 
   }
   
