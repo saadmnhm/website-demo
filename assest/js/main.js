@@ -96,22 +96,82 @@ $(function() {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  function moveDivToTop() {
-      const vdYoutube = document.getElementById("vd-youtube");
-      
-      if (window.innerWidth <= 991 && window.innerWidth >= 400) {
-          // Add a class to style it as fixed at the top
-          vdYoutube.classList.add("fixed-top");
-      } else {
-          // Remove the fixed class when out of the screen range
-          vdYoutube.classList.remove("fixed-top");
-      }
+window.addEventListener("resize", function () {
+  const vdYoutube = document.getElementById("vd-youtube");
+
+  if (window.innerWidth <= 991) {
+    vdYoutube.style.position = "absolute";
+    vdYoutube.style.top = "100px";
+    vdYoutube.style.left = "0";
+    vdYoutube.style.width = "100%";
+    vdYoutube.style.zIndex = "999";
+  } else {
+    vdYoutube.style.position = "relative"; // Reset for larger screens
+    vdYoutube.style.top = "unset";
+    vdYoutube.style.left = "unset";
+    vdYoutube.style.width = "unset";
+    vdYoutube.style.zIndex = "unset";
   }
-
-  // Execute on load
-  moveDivToTop();
-
-  // Execute on window resize
-  window.addEventListener("resize", moveDivToTop);
 });
+
+
+
+
+ let currentIndex = 0;
+
+        function updateSlider(index) {
+            const slider = document.querySelector('.slider');
+            const offset = index * 100;
+            slider.style.transform = `translateX(-${offset}%)`;
+            slider.style.opacity = 0.6; // Затухание
+            setTimeout(() => {
+                slider.style.opacity = 1; // Возвращение к полной непрозрачности
+            }, 350); // Продолжительность затухания
+
+            // Обновляем активный элемент меню
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelector(`.menu-item[data-index="${index + 1}"]`).classList.add('active');
+        }
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', () => { 
+                const index = parseInt(item.getAttribute('data-index')) - 1;
+                currentIndex = index;
+                updateSlider(index);
+            });
+        });
+
+        // Инициализация Hammer.js
+        const slider = document.querySelector('.slider');
+        const hammer = new Hammer(slider);
+
+        hammer.on('swipeleft', () => {
+            currentIndex = (currentIndex + 1) % 2;
+            updateSlider(currentIndex);
+        });
+
+        hammer.on('swiperight', () => {
+            currentIndex = (currentIndex - 1 + 2) % 2;
+            updateSlider(currentIndex);
+        });
+
+        // Инициализация первого слайда
+        updateSlider(currentIndex);
+
+        // Function to go to the next slide
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % 2; // Cycle to the next index (0 or 1)
+  updateSlider(currentIndex);
+}
+
+// Function to go to the previous slide
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + 2) % 2; // Cycle to the previous index (0 or 1)
+  updateSlider(currentIndex);
+}
+
+// Add event listeners to buttons
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
