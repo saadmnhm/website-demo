@@ -359,7 +359,7 @@ body {
 
 }
 .aventage-flex-box {
-    width: 280px!important;
+    width: 280px;
     color: black;
     font-size: 15px;
     background-color: #31294C;
@@ -466,38 +466,31 @@ body {
     height: 405px;
     background-color: #FFCB21;
     display: flex;
-}
-.presentation .part1{
-    position: relative;
-    left: 200px;
-}
-.presentation .qui1{
-    width: 220px;
-    height: 70px;
-    position: relative;
-    top: 40px;
-}
-.presentation .qui2{
-    width: 700px;
-    height: 160px;
-    position: relative;
-    top: 80px;
+  .part1{
+    margin-left: 80px;
 
-}
-.presentation .qui3{
-    width: 175px;
-    height: 75px;
+  }
+  .qui1{
+    margin-top: 30px;
+
+  }
+  .part1 .qui2{
     position: relative;
-    top: 80Px;
-    left: 25px;
-}
-.presentation .qui4{
-    width: 260px;
-    height: 260px;
+    top: 45px;
+  }
+  .qui3{
     position: relative;
-    top: 70px;
-    right: 45px;
+    top: 70Px;
+    right: 70px;
+  }
+  .qui4{
+    position: relative;
+    TOP: 38Px;
+    width: 280px;
+    right: 110px;
+  }
 }
+
 
 
 /*-----------------------------presentation------------------------*/
@@ -821,7 +814,7 @@ body {
   .rpi-overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 65px;
     width: 100%;
     height: 100%;
     align-items: flex-end;
