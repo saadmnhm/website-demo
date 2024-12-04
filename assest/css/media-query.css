@@ -12,13 +12,6 @@
         z-index: 999999999999;
         height: 100Px;
     }
-    .fixed-top {
-        position: absolute !important;
-        top: 95px !important;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
     .container-fluid{
         overflow: hidden;
     }
@@ -51,19 +44,18 @@
         display: none;
     }
     .aventage .why .logo .image-class1 {
-        width: 225px;
+        width: 206px;
         height: 90Px;
         position: relative;
-        top: 40px;
-        left: -10px;
+        top: 65px;
+        left: -40px;
         object-fit: contain;
     }
     .aventage .why .logo .image-class2 {
         position: relative;
-        left: 115px;
-        width: 120px;
-        left: 10px;
-        top: 20Px;
+        width: 110px;
+        left: -38px;
+        top: 61Px;
     }
     .aventage {
         background-color: #201A35;
@@ -73,28 +65,25 @@
     }
 
 
-    .presentation .qui2 {
-        width: 185px;
-        height: 160px;
-        position: relative;
-        top: 80px;
-    }
-    .presentation .part2{
-        position: relative;
-    right: 100Px;
-    }
     .presentation-2 .buttom p {
         font-size: 15px;
     }
     .presentation-2 .buttom a {
-        display: inline-block;
-        width: 104px;
+        display: flex;
+        width: 190px;
         height: 75px;
+        margin-bottom: 12px;
+        left: 60PX;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 16PX 0 0px 0px;               
     }
     .presentation-2 .body {
         width: 300PX;
         right: 132px;
         top: 8px;
+        margin: 175px -2px 0px -25px;
     }
     .presentation-2 .body p {
         font-family: Poppins;
@@ -103,7 +92,7 @@
         line-height: 40px;
     }
     .presentation-2 {
-        height: 375px;
+        height: 475px;
     }
     .vd-youtube{
         display: block;
@@ -114,7 +103,8 @@
     }
     .vd-youtube .mobile-text{
         display: block !important;
-        margin: 70px 0 0 80px;
+        margin: 70px 0 0 55px;
+
     }
     .vd-youtube p {
         font-size: 25px;
@@ -128,16 +118,17 @@
         width: 300px;
         position: relative;
         top: 55px;
-        left: 65px;
+        left: 43px;
     }
     .service .image .img1 {
-        width: 140px;
+        width: 103px;
         position: relative;
         left: 10px;
-        height: 160Px;
+        height: 114Px;
+        margin-left: 13Px;
     }
     .service .image .img2 {
-        width: 260Px;
+        width: 240Px;
         height: 90px;
         position: relative;
         left: 13px;
@@ -151,7 +142,8 @@
         height: 80Px;
         position: relative;
         top: 100px;
-        left: -315Px;
+        left: -320Px;
+
     }
     .service {
         height: 1970px;
@@ -203,36 +195,38 @@
         }
         .screen-wts {
             position: relative;
-            right: 215PX;
+            right: 270PX;
             z-index: 1;
-            width: 425px;
-            bottom: 70px;
+            width: 503px;
+            bottom: 85px;
             height: 632Px;
         }
         .frame {
             display: flex;
-            height: 1000Px;
+            height: 620Px;
         }
         .man-think {
             height: 100Px;
             position: relative;
-            top: 60px;
-            right: -22px;
-            width: 200px;
+            top: 25px;
+            right: -55px;
+            width: 241px;
+            margin-left: -42px;
             z-index: 3;
         }
         .doz-privé {
             position: relative;
-            top: 180Px;
-            right: 425PX;
-            width: 170px;
+            top: 115Px;
+            right: 513PX;
+            width: 187px;
+            margin-left: -16px;
             height: 75px;
             z-index: 3;
         }
         .email-footer {
             position: relative;
-            top: 250Px;
-            right: 655PX;
+            top: 180Px;
+            right: 745PX;
             width: 210px;
             height: 75px;
             z-index: 3;
@@ -243,87 +237,83 @@
         }
         .phone-footer {
             position: relative;
-            top: 320Px;
-            right: 900PX;
+            top: 242Px;
+            right: 993PX;
             width: 210px;
             height: 75px;
             z-index: 3;
         }
+        }
         .phone-footer img{
             width: 270px;
         }
-        .reseau {
-            position: relative;
-            top: 450Px;
-            right: 1115PX;
-            width: 390px;
-            height: 68px;
-            z-index: 3;
+        .reseau { 
+            position: relative !important;
+            top: 362Px !important;
+            right: 1214PX !important;
+            width: 390px !important;
+            height: 68px !important;
+            z-index: 3 !important;
         }
         .reseau-mess{
-            width: 280px;
+            width: 280px !important;
         }
         .logo {
-            display: flex;
-            position: relative;
-            bottom: 56px;
-            left: 50px;
+            display: flex !important;
+            position: relative !important;
+            bottom: 56px !important;
+            left: 50px !important;
+        }
+        .aventage-flex-box {
+            margin: 20px 10px 0px 30px;
+            width: 360px ;
+        }
+        .service-flex-box {
+            margin: 10px 10px 0 30px;
+            width: 380px !important;
+        }
+
+        .part1 {
+            margin-left: -9px !important;
+        }
+        .qui1 {
+            margin-top: 30px;
+            width: 160PX;
+            object-fit: contain;
+        }
+        .part1 .qui2 {
+            top: 80px !important;
+            height: 105px;
+            width: 310Px;
+            object-fit: contain;
+        }
+        .qui3 {
+            position: relative !important;
+            top: 105Px !important;
+            right: 312px !important;
+            width: 120px !important;
+        }
+
+        .qui4 {
+            position: relative !important;
+            TOP: 159Px !important;
+            width: 190px !important;
+            right: 250px !important;
+
+        }
+        .rpi-overlay {
+
+            left: -12px !important;
         }
     }
-    .presentation .part1 {
-        position: relative;
-        left: 10px;
-    }
-    .presentation {
-        height: 525px;
-    }
-    .presentation .part2 {
-        position: relative;
-        right: 295Px;
-        width: 10px;
-    }
-    .presentation .qui3 {
-        top: 112Px;
-        left: -120px;
-        width: 135px;
-        height: 55px;
-        object-fit: contain;
-        position: relative;
-    }
-    .presentation .qui2 {
-        width: 410px;
-        height: 160px;
-        position: relative;
-        top: 110px;
-        object-fit: contain;
-    }
-    .presentation .qui4 {
-        width: 260px;
-        height: 260px;
-        position: relative;
-        top: 210px;
-        right: 45px;
-    }
-    .aventage-flex-box {
-        margin: 20px 10px 0px 30px;
-        width: 360px!important ;
-    }
-    .service-flex-box {
-        margin: 10px 10px 0 30px;
-        width: 380px !important;
-    }
-    .presentation .qui1 {
-        width: 160px;
-        height: 55px;
-        position: relative;
-        top: 40px;
-        object-fit: contain;
-    }
+    
+    
+
     
     
     
 
-  }
+  
   
   /* Small Devices (Landscape Phones/Tablets, 576px to 767px) */
   @media (min-width: 576px) and (max-width: 767.98px) {
